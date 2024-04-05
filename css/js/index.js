@@ -290,6 +290,37 @@ document.addEventListener("DOMContentLoaded", () => {
 			}		
 		}
 
+		window.addEventListener('scroll', () => {
+			scrollAnimation()
+		})
+		
 		scrollAnimation()
+
+		try {
+			const socialArr = [
+				{
+					name: '.telegram',
+					address: 'https://telegram.org'
+				},
+				{
+					name: '.twitter',
+					address: 'https://twitter.com'
+				}
+			]
+
+			socialArr.map( item => {
+				const nodes = document.querySelectorAll(item.name)
+				if (nodes.length > 0) {
+					nodes.forEach(node => {
+						node.href = item.address
+					})
+				}
+			})						
+		} catch (e) {
+			console.warn(e)
+		}
+
+
+
 
 });
