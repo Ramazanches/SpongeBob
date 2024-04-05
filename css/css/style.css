@@ -180,6 +180,7 @@ header {
 	display: none;
 }
 .nav__list {
+	display: inline-block;
 }
 .nav__list > li {
 	position: relative;
@@ -240,6 +241,7 @@ body._touch .nav__list > li {
 
 body._touch .nav__link {
 	flex: 1 1 auto;
+	white-space: nowrap;
 }
 body._touch .nav__icon {
 	display: block;	
