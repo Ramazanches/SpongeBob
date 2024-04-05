@@ -409,7 +409,6 @@ body._touch .nav__list > li._active .nav__icon {
   }
 }
 
-
 .s1 .wave-button {
   margin: 100px auto;
   width: 500px;
@@ -512,6 +511,7 @@ body._touch .nav__list > li._active .nav__icon {
 	transform: translateX(0);
 }
 .s2__subtitle {
+	margin-top: 25px;
 	font-size: var(--h2);
 	line-height: var(--h2_h);
 	font-family: var(--loveking);
@@ -527,8 +527,14 @@ body._touch .nav__list > li._active .nav__icon {
 		line-height: var(--h1_h);
   }
 }
+
+.s2__text {
+  padding: var(--inner) 0;
+  font-family: var(--potta);
+}
+
 .list__s2 {
-	margin: 20px 0;
+	margin: 20px 0 70px 0;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	column-gap: calc(var(--inner-sm) / 2);
@@ -579,7 +585,9 @@ body._touch .nav__list > li._active .nav__icon {
 }
 
 .list__link {
-	position: relative;
+  position: relative;
+  width: 100%;
+  height: 100%;
   display: flex;
   padding: var(--inner-xs);
   flex-direction: column;
@@ -619,14 +627,14 @@ body._touch .nav__list > li._active .nav__icon {
 	opacity: 0;
 	transition: all .3s ease 0s;
 }
-.s3__item:nth-child(1) {transition-delay: 0.2s; }
-.s3__item:nth-child(2) {transition-delay: 0.4s; }
-.s3__item:nth-child(3) {transition-delay: 0.6s; }
-.s3__item:nth-child(4) {transition-delay: 0.8s; }
-.s3__item:nth-child(5) {transition-delay: 1s; }
-.s3__item:nth-child(6) {transition-delay: 1.2s; }
-.s3__item:nth-child(7) {transition-delay: 1.4s; }
-.s3__item:nth-child(8) {transition-delay: 1.6s; }
+.s3__item:nth-child(1) {transition-delay: 0.1s; }
+.s3__item:nth-child(2) {transition-delay: 0.2s; }
+.s3__item:nth-child(3) {transition-delay: 0.3s; }
+.s3__item:nth-child(4) {transition-delay: 0.4s; }
+.s3__item:nth-child(5) {transition-delay: 0.5s; }
+.s3__item:nth-child(6) {transition-delay: 0.6s; }
+.s3__item:nth-child(7) {transition-delay: 0.7s; }
+.s3__item:nth-child(8) {transition-delay: 0.8s; }
 
 .s3__item._active {
 	transform: translateX(0);
@@ -687,4 +695,10 @@ body._touch .nav__list > li._active .nav__icon {
 .social__link svg {
 	width: 50px;
 	fill: var(--light);
+}
+
+.footer__text {
+  padding: var(--inner) 0;
+  font-family: var(--potta);
+  text-align: center;
 }
