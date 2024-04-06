@@ -199,8 +199,15 @@ header {
   background: #fff;
   transition: all .3s ease 0s;
 }
-.nav__link:hover:after {
-	width: 100%;
+@media (hover: hover) {
+	.nav__link:hover:after {
+		width: 100%;
+	}
+}
+@media (hover: none) {
+	.nav__link:active:after {
+		width: 100%;
+	}	
 }
 .nav__submenu {
   position: absolute;
@@ -218,8 +225,15 @@ header {
 }
 .nav__submenu__link {
 }
-.nav__submenu__link:hover {
-	text-decoration: underline;
+@media (hover: hover) {
+	.nav__submenu__link:hover {
+		text-decoration: underline;
+	}
+}
+@media (hover: none) {
+	.nav__submenu__link:active {
+		text-decoration: underline;
+	}	
 }
 .nav__icon {
 	display: none;	
@@ -227,11 +241,21 @@ header {
 
 /*-------------------------*/
 
-body._pc .nav__list > li:hover .nav__submenu {
-	opacity: 1;
-	visibility: visible;
-	transform: translate(0, 0);
-	pointer-events: all;
+@media (hover: hover) {
+	body._pc .nav__list > li:hover .nav__submenu {
+		opacity: 1;
+		visibility: visible;
+		transform: translate(0, 0);
+		pointer-events: all;
+	}
+}
+@media (hover: none) {
+	body._pc .nav__list > li:hover .nav__submenu {
+		opacity: 1;
+		visibility: visible;
+		transform: translate(0, 0);
+		pointer-events: all;
+	}	
 }
 
 body._touch .nav__list > li {
@@ -649,8 +673,15 @@ body._touch .nav__list > li._active .nav__icon {
 	height: 100%;
 	background: rgba(0, 0, 0, .1);
 }
-.s3__item:hover:before {
-	background: rgba(0, 0, 0, .0);
+@media (hover: hover) {
+	.s3__item:hover:before {
+		background: rgba(0, 0, 0, .0);
+	}
+}
+@media (hover: none) {
+	.s3__item:hover:before {
+		background: rgba(0, 0, 0, .0);
+	}	
 }
 .s3__img {
 	width: 100%;
